@@ -21,7 +21,7 @@ export default function Home() {
     label: string;
   }
   let arrOfDetails: arrOfDetails_type[] = [
-    { img: temp_logo, alt: "", value: "24", label: "temperature" },
+    { img: temp_logo, alt: "", value: "24°", label: "temperature" },
     { img: "s", alt: "Km", value: "873", label: "mleage" },
     { img: bolt_big, alt: "", value: "94%", label: "battery" },
   ];

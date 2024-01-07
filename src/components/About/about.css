@@ -3,3 +3,7 @@
 @tailwind utilities;
 @layer components {
 }
+.about__card_details {
+  background-color: hsla(0, 0%, 100%, 0.1);
+  backdrop-filter: blur(5px);
+}
