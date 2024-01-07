@@ -1,4 +1,5 @@
 import "./style/input.css";
+import "./scrollbar.css";
 import "./App.css";
 // components
 import { MyContainer } from "./components";
