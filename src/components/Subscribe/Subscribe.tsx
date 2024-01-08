@@ -5,7 +5,7 @@ import car_img from "/offer.png";
 export default function Subscribe() {
   return (
     <>
-      <article className="text-white flex justify-evenly items-center bg-[url('/offer-bg.png')] h-[35rem]  bg-cover bg-no-repeat mt-[10rem]">
+      <article className="max-w-full text-white flex justify-evenly items-center bg-[url('/offer-bg.png')] h-[35rem]  bg-cover bg-no-repeat mt-[10rem]">
         <section className="w-[28rem] space-y-[2.5rem] ">
           <h1 className="text-[2rem] font-medium">
             Do You Want To Receive <br /> Special Offers ?

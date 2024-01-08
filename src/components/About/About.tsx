@@ -7,7 +7,10 @@ import about_img from "/about.png";
 export default function About() {
   return (
     <>
-      <Card className="!bg-transparent flex mt-[10rem] justify-between items-center">
+      <Card
+        component="article"
+        className="!bg-transparent flex mt-[10rem] justify-between items-center"
+      >
         <div className="w-[47%] flex flex-col items-end justify-end">
           <img src={about_img} alt="" className=" rounded-xl" />
           <div className="about__card_details translate-y-[2.5rem] absolute rounded-3xl w-[15rem] py-[0.8rem] px-[2rem] text-white text-center">

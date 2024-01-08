@@ -6,3 +6,5 @@ export { default as Popular } from "./Popular/Popular";
 export { default as Featured } from "./Featured/Featured";
 export { default as Logos } from "./Logos/Logos";
 export { default as Subscribe } from "./Subscribe/Subscribe";
+export { default as Footer } from "./Footer/Footer";
+export { default as MoreFeatures } from "./MoreFeatures/MoreFeatures";
