@@ -7,6 +7,7 @@ import {
   Home,
   About,
   Featured,
+  MoreFeatures,
   Subscribe,
   Logos,
 } from "../../components";
@@ -17,6 +18,7 @@ export default function MyContainer() {
       <Home />
       <About />
       {/* <Featured /> */}
+      <MoreFeatures />
       <Subscribe />
       <Logos />
     </>
