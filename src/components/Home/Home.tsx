@@ -32,7 +32,9 @@ export default function Home() {
         className="flex flex-col  items-center !bg-transparent !shadow-none !text-white"
       >
         <div id="Home__title" className="text-center space-y-[0.6rem]">
-          <h1 className="text-[2.2rem] mb-[1.4rem]">Choose The Best Car</h1>
+          <h1 className="text-[2.2rem] mb-[1.4rem] font-medium">
+            Choose The Best Car
+          </h1>
           <h3 className="text-[1.4rem]">Porsche Mission E</h3>
           <h4 className="flex space-x-2 justify-center text-[1.2rem]">
             <img src={bolt_logo} alt="logo" />
@@ -42,10 +44,10 @@ export default function Home() {
         <CardMedia
           image={home_img}
           component="div"
-          className="h-[17rem] w-[50rem] !bg-contain my-[2rem]"
+          className="h-[19rem] w-[50rem] !bg-contain my-[2rem]"
         />
         <CardContent>
-          <ul className="flex justify-between w-[30rem]">
+          <ul className="flex justify-between w-[32rem]">
             {arrOfDetails.map((e, i) => {
               return (
                 <li

@@ -1,16 +1,24 @@
 import "./mycontainer.css";
 // mui
-import { Container } from "@mui/material";
+// import { Container } from "@mui/material";
 // components
-import { Navbar, Home, About } from "../../components";
+import {
+  Navbar,
+  Home,
+  About,
+  Featured,
+  Subscribe,
+  Logos,
+} from "../../components";
 export default function MyContainer() {
   return (
     <>
       <Navbar />
-      <Container>
-        <Home />
-        <About />
-      </Container>
+      <Home />
+      <About />
+      {/* <Featured /> */}
+      <Subscribe />
+      <Logos />
     </>
   );
 }
