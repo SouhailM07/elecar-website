@@ -3,3 +3,22 @@
 @tailwind utilities;
 @layer components {
 }
+.swiper {
+  @apply h-full w-full;
+}
+
+.Card:hover .CardMedia {
+  @apply translate-y-[-1rem];
+  transition: 0.3s;
+}
+
+.swiper-slide {
+  @apply !flex justify-center;
+}
+
+.swiper-pagination {
+  @apply !relative mt-[5rem];
+}
+.swiper-pagination-bullet {
+  @apply !bg-blue-600;
+}

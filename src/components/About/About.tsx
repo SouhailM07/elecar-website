@@ -9,7 +9,7 @@ export default function About() {
     <>
       <Card
         component="article"
-        className="!bg-transparent flex mt-[10rem] justify-between items-center"
+        className="!bg-transparent flex justify-between items-center"
       >
         <div className="w-[47%] flex flex-col items-end justify-end">
           <img src={about_img} alt="" className=" rounded-xl" />

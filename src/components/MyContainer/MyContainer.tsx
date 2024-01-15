@@ -6,6 +6,7 @@ import {
   Navbar,
   Home,
   About,
+  Popular,
   Featured,
   MoreFeatures,
   Subscribe,
@@ -15,12 +16,15 @@ export default function MyContainer() {
   return (
     <>
       <Navbar />
-      <Home />
-      <About />
-      {/* <Featured /> */}
-      <MoreFeatures />
-      <Subscribe />
-      <Logos />
+      <main className="space-y-[17rem]">
+        <Home />
+        <About />
+        <Popular />
+        <Featured />
+        <MoreFeatures />
+        <Subscribe />
+        <Logos />
+      </main>
     </>
   );
 }

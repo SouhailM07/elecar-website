@@ -11,7 +11,7 @@ export default function Logos() {
   let arrOfLogos: string[] = [logo_1, logo_2, logo_3, logo_4, logo_5, logo_6];
   return (
     <>
-      <article className="mt-[10rem]">
+      <article className="">
         <ul className="flex justify-between">
           {arrOfLogos.map((e, i) => {
             return (

@@ -5,7 +5,7 @@ import car_img from "/features.png";
 export default function MoreFeatures() {
   return (
     <>
-      <article className="text-white  mt-[10rem]">
+      <article className="text-white ">
         <div className="-rotate-[25deg] h-[45rem] w-[50rem] m-auto bg-[url('/map.svg')] bg-cover bg-no-repeat flex justify-center items-center">
           <ul className="rotate-[25deg] bg-[url('/features.png')] bg-no-repeat h-[36rem] w-[27rem]  bg-center bg-contain flex flex-col justify-evenly py-[4rem]">
             <li className="about__card_details rounded-3xl w-[10rem] py-[0.8rem] px-[2rem] text-white text-center">
