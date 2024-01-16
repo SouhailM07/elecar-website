@@ -74,16 +74,19 @@ export default function Popular() {
   ];
   return (
     <>
-      <article id="Popular" className="space-y-[6rem]">
+      <article
+        id="Popular"
+        className="space-y-[6rem] w-[90%] md:w-full m-auto "
+      >
         {/* Title */}
-        <h1 className="text-[2rem] font-medium text-white text-center">
+        <h1 className="lg:text-[2rem] text-[1.8rem] font-medium  text-white text-center">
           Choose Your Electric Car Of <br /> The Porsche Brand
         </h1>
         {/* Selectors */}
         {/* Gallery */}
         <Swiper
           spaceBetween={30}
-          slidesPerView={3}
+          slidesPerView="auto"
           pagination={{
             clickable: true,
           }}

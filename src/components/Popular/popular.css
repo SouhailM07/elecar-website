@@ -4,7 +4,7 @@
 @layer components {
 }
 .swiper {
-  @apply h-full w-full;
+  @apply h-full w-full flex-wrap;
 }
 
 .Card:hover .CardMedia {
