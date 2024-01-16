@@ -8,3 +8,4 @@ export { default as Logos } from "./Logos/Logos";
 export { default as Subscribe } from "./Subscribe/Subscribe";
 export { default as Footer } from "./Footer/Footer";
 export { default as MoreFeatures } from "./MoreFeatures/MoreFeatures";
+export { default as Navbar_mobile } from "./Navbar_mobile/Navbar_mobile";
