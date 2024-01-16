@@ -11,6 +11,7 @@ import {
   MoreFeatures,
   Subscribe,
   Logos,
+  Footer,
 } from "../../components";
 export default function MyContainer() {
   return (
@@ -25,6 +26,7 @@ export default function MyContainer() {
         <Subscribe />
         <Logos />
       </main>
+      <Footer />
     </>
   );
 }

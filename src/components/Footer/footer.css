@@ -3,3 +3,14 @@
 @tailwind utilities;
 @layer components {
 }
+.footer__title {
+  @apply text-[1.5rem] mb-[1rem];
+}
+
+.footer__links {
+  @apply space-y-[0.7rem] text-gray-300 text-[1.1rem];
+}
+
+footer ul li {
+  @apply cursor-pointer;
+}

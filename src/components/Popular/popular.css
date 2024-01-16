@@ -8,7 +8,7 @@
 }
 
 .Card:hover .CardMedia {
-  @apply translate-y-[-1rem];
+  @apply translate-y-[-0.7rem];
   transition: 0.3s;
 }
 
