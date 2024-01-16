@@ -7,8 +7,11 @@ export default function Navbar() {
   let arrOfLinks: string[] = ["Home", "About", "Popular", "Features"];
   return (
     <>
-      <AppBar className="!bg-bodyColor !shadow-none" position="sticky">
-        <Toolbar className="justify-between !px-[7rem]">
+      <AppBar
+        className="!bg-bodyColor !shadow-none m-auto max-w-[84rem]"
+        position="sticky"
+      >
+        <Toolbar className="justify-between ">
           <div className="flex items-center text-[1.5rem] space-x-2">
             <img src={nav_logo} alt="logo" />
             <p>Elecar</p>
