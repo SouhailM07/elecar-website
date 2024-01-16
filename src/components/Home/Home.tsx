@@ -7,13 +7,39 @@ import {
   CardActions,
   Avatar,
 } from "@mui/material";
+// hooks
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 // assets
 import home_img from "/home.png";
 import bolt_logo from "/bolt-solid -small.svg";
-import bolt_big from "/public/bolt-solid.svg";
+import bolt_big from "/bolt-solid.svg";
 import temp_logo from "/temperature-quarter-solid.svg";
 
 export default function Home() {
+  useEffect(() => {
+    // Initialize ScrollReveal
+    const sr = ScrollReveal({
+      // options
+      origin: "top",
+      distance: "60px",
+      duration: 2500,
+      delay: 400,
+    });
+    sr.reveal("#Home__title h1");
+    sr.reveal(".Home__subtitle", { delay: 500 });
+    sr.reveal(".Home__elec", { delay: 600 });
+    sr.reveal(".Home__car", { delay: 800 });
+    sr.reveal(".Home__car-data", {
+      delay: 900,
+      interval: 100,
+      origin: "bottom",
+    });
+    sr.reveal("#Home__button", {
+      delay: 1000,
+      origin: "bottom",
+    });
+  }, []);
   interface arrOfDetails_type {
     img: string;
     alt: string;
@@ -35,18 +61,18 @@ export default function Home() {
           <h1 className="text-[2.2rem] mb-[1.4rem] font-medium">
             Choose The Best Car
           </h1>
-          <h3 className="text-[1.4rem]">Porsche Mission E</h3>
-          <h4 className="flex space-x-2 justify-center text-[1.2rem]">
+          <h3 className="text-[1.4rem] Home__subtitle">Porsche Mission E</h3>
+          <h4 className="flex space-x-2 justify-center text-[1.2rem] Home__elec">
             <img src={bolt_logo} alt="logo" />
-            <p>Electric Car</p>
+            <p className="">Electric Car</p>
           </h4>
         </div>
         <CardMedia
           image={home_img}
           component="div"
-          className="h-[18rem] w-[50rem] !bg-contain my-[2rem]"
+          className="h-[18rem] w-[50rem] !bg-contain my-[2rem] Home__car"
         />
-        <CardContent>
+        <CardContent className="Home__car-data">
           <ul className="grid grid-cols-3 place-items-center w-[37rem]">
             {arrOfDetails.map((e, i) => {
               return (
@@ -69,10 +95,10 @@ export default function Home() {
             })}
           </ul>
         </CardContent>
-        <CardActions className="mt-[3rem]">
+        <CardActions className="mt-[3rem] ">
           <button
             id="Home__button"
-            className="border-2 border-green-600 flex items-center justify-center h-[4.5rem] w-[4.5rem] rounded-full"
+            className="border-2 border-green-600 flex items-center justify-center h-[4.5rem] w-[4.5rem] rounded-full mb-[0.7rem]"
           >
             START
           </button>
