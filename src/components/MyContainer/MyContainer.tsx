@@ -18,9 +18,9 @@ export default function MyContainer() {
     <>
       {/* <Navbar /> */}
       <main className="space-y-[17rem]">
-        <Home />
+        {/* <Home /> */}
         {/* <About /> */}
-        {/* <Popular /> */}
+        <Popular />
         {/* <Featured /> */}
         {/* <MoreFeatures /> */}
         {/* <Subscribe /> */}

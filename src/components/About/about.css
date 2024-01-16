@@ -3,6 +3,26 @@
 @tailwind utilities;
 @layer components {
 }
+
+#About {
+  @apply flex lg:flex-row flex-col  justify-between items-center overflow-visible lg:max-w-full max-w-[40rem] lg:px-0 px-[1.8rem] lg:gap-0 gap-y-[5rem];
+  @apply !bg-transparent;
+}
+.About__img {
+  @apply flex flex-col items-end justify-end;
+  @apply lg:w-[47%] w-full;
+}
+.About__details {
+  @apply lg:w-[45%] w-full;
+}
+.About__details h2 {
+  @apply text-white text-[2rem];
+}
+.About__details div {
+  @apply !pl-0;
+  @apply lg:!py-[2rem] !py-[1.5rem] text-[1.1rem]   lg:text-[1.2rem] max-w-[30rem];
+  @apply text-textColor;
+}
 .about__card_details {
   background-color: hsla(0, 0%, 100%, 0.1);
   backdrop-filter: blur(5px);
