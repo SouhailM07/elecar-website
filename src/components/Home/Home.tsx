@@ -44,10 +44,10 @@ export default function Home() {
         <CardMedia
           image={home_img}
           component="div"
-          className="h-[19rem] w-[50rem] !bg-contain my-[2rem]"
+          className="h-[18rem] w-[50rem] !bg-contain my-[2rem]"
         />
         <CardContent>
-          <ul className="flex justify-between w-[32rem]">
+          <ul className="grid grid-cols-3 place-items-center w-[37rem]">
             {arrOfDetails.map((e, i) => {
               return (
                 <li
