@@ -5,7 +5,7 @@
 }
 
 #About {
-  @apply flex lg:flex-row flex-col  justify-between items-center overflow-visible lg:max-w-full max-w-[40rem] lg:px-0 px-[1.8rem] lg:gap-0 gap-y-[5rem];
+  @apply flex lg:flex-row flex-col  justify-between items-center overflow-visible lg:max-w-[80rem] mx-auto max-w-[40rem] lg:px-0 px-[1.8rem] lg:gap-0 gap-y-[5rem];
   @apply !bg-transparent;
 }
 .About__img {

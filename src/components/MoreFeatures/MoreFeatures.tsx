@@ -5,19 +5,21 @@ import car_img from "/features.png";
 export default function MoreFeatures() {
   return (
     <>
-      <article className="text-white ">
-        <div className="-rotate-[25deg] h-[45rem] w-[50rem] m-auto bg-[url('/map.svg')] bg-cover bg-no-repeat flex justify-center items-center">
-          <ul className="rotate-[25deg] bg-[url('/features.png')] bg-no-repeat h-[36rem] w-[27rem]  bg-center bg-contain flex flex-col justify-evenly py-[4rem]">
-            <li className="about__card_details rounded-3xl w-[10rem] py-[0.8rem] px-[2rem] text-white text-center">
-              <h3 className="text-[1.4rem] font-medium ">800v</h3>
+      <article id="MoreFeatures">
+        <img src={map_img} alt="img" className="rotate-[-25deg] " />
+        <img src={car_img} alt="img" id="MoreFeatures__car" />
+        <div className="absolute w-[65%] z-[3] ">
+          <ul id="MoreFeatures__details">
+            <li className="about__card_details px-[2rem] ">
+              <h3>800v</h3>
               <p>Turbo Charge</p>
             </li>
-            <li className="self-end translate-y-[-2rem] about__card_details rounded-3xl w-[10rem] py-[0.8rem] px-[3rem] text-white text-center">
-              <h3 className="text-[1.4rem] font-medium ">350</h3>
+            <li className="self-end translate-y-[-2rem] about__card_details px-[3rem] ">
+              <h3>350</h3>
               <p>km Range</p>
             </li>
-            <li className="about__card_details rounded-3xl w-[10rem] py-[0.8rem] px-[3rem] text-white text-center">
-              <h3 className="text-[1.4rem] font-medium ">480</h3>
+            <li className="about__card_details px-[3rem] ">
+              <h3>480</h3>
               <p>Km Travel</p>
             </li>
           </ul>

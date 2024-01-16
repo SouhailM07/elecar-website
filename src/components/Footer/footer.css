@@ -11,6 +11,10 @@
   @apply space-y-[0.7rem] text-gray-300 text-[1.1rem];
 }
 
+footer {
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+}
+
 footer ul li {
   @apply cursor-pointer;
 }

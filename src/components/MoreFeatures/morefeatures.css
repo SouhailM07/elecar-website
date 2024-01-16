@@ -3,3 +3,28 @@
 @tailwind utilities;
 @layer components {
 }
+
+#MoreFeatures {
+  @apply flex justify-center items-center;
+  @apply overflow-hidden max-w-[50rem];
+  @apply text-white;
+}
+
+#MoreFeatures__car {
+  @apply absolute;
+  @apply z-[1] md:w-[16rem] w-[34vw];
+}
+
+#MoreFeatures__details {
+  @apply flex flex-col justify-evenly;
+  @apply m-auto max-w-[27rem] z-[2] py-[4rem];
+  @apply bg-center bg-contain text-white text-center;
+}
+
+#MoreFeatures__details li {
+  @apply rounded-3xl md:w-[10rem] w-[8rem] py-[0.8rem];
+}
+
+#MoreFeatures__details h3 {
+  @apply md:text-[1.4rem] font-medium text-[1.15rem];
+}

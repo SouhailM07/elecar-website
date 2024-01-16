@@ -21,10 +21,10 @@ export default function MyContainer() {
         {/* <Home /> */}
         {/* <About /> */}
         {/* <Popular /> */}
-        <Featured />
+        {/* <Featured /> */}
         {/* <MoreFeatures /> */}
-        {/* <Subscribe /> */}
-        <Logos />
+        <Subscribe />
+        {/* <Logos /> */}
       </main>
       {/* <Footer /> */}
     </>
