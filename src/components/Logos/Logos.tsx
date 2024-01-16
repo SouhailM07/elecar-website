@@ -12,11 +12,11 @@ export default function Logos() {
   return (
     <>
       <article className="">
-        <ul className="flex justify-between">
+        <ul className="flex justify-between items-center">
           {arrOfLogos.map((e, i) => {
             return (
               <li key={i} className="opacity-40 hover:opacity-100">
-                <img src={e} alt="logo" className="h-[4rem]" />
+                <img src={e} alt="logo" className=" w-[4rem]" />
               </li>
             );
           })}
