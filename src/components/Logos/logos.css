@@ -3,3 +3,7 @@
 @tailwind utilities;
 @layer components {
 }
+
+#Logos ul {
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+}

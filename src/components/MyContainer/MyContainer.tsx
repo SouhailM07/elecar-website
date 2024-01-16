@@ -24,7 +24,7 @@ export default function MyContainer() {
         <Featured />
         {/* <MoreFeatures /> */}
         {/* <Subscribe /> */}
-        {/* <Logos /> */}
+        <Logos />
       </main>
       {/* <Footer /> */}
     </>
