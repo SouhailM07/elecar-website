@@ -1,14 +1,8 @@
 import "./featured.css";
 // mui
-import {
-  Card,
-  CardMedia,
-  CardContent,
-  CardActions,
-  CardHeader,
-} from "@mui/material";
+import { Card, CardMedia, CardContent } from "@mui/material";
 // hooks
-import { useState } from "react";
+import { useState, useEffect } from "react";
 // assets
 import addToCard_logo from "/bxs-shopping-bag-alt.svg";
 //
@@ -23,15 +17,23 @@ import porsche_1 from "/featured4.png";
 import porsche_2 from "/featured5.png";
 
 export default function Featured() {
+  useEffect(() => {
+    const firstLabel = document.querySelector(
+      "input[type='radio']"
+    ) as HTMLLabelElement;
+    firstLabel.click();
+  }, []);
+  let [filterCar, setFilterCar] = useState<string>("All");
   interface arrOfLabels_type {
     img: string;
     value: string;
+    filter: string;
   }
   const arrOfLabels: arrOfLabels_type[] = [
-    { img: "", value: "All" },
-    { img: tesla_logo, value: "" },
-    { img: audi_logo, value: "" },
-    { img: porsche_logo, value: "" },
+    { img: "all", value: "All", filter: "All" },
+    { img: tesla_logo, value: "", filter: "tesla" },
+    { img: audi_logo, value: "", filter: "audi" },
+    { img: porsche_logo, value: "", filter: "porsche" },
   ];
 
   //===================================================================================
@@ -40,6 +42,7 @@ export default function Featured() {
     car_name: string;
     model: string;
     price: string;
+    type: string[];
   }
   const arrOfCars: arrOfCars_type[] = [
     {
@@ -47,45 +50,50 @@ export default function Featured() {
       car_name: "Tesla",
       model: "Model X",
       price: "98,900",
+      type: ["All", "tesla"],
     },
     {
       img: tesla_car_red,
       car_name: "Tesla",
       model: "Model 3",
       price: "45,900",
+      type: ["All", "tesla"],
     },
     {
       img: audi_car,
       car_name: "Audi",
       model: "E-tron",
       price: "175,900",
+      type: ["All", "audi"],
     },
     {
       img: porsche_1,
       car_name: "Porsche",
       model: "E-tron",
       price: "175,900",
+      type: ["All", "porsche"],
     },
     {
       img: porsche_2,
       car_name: "Porsche",
       model: "E-tron",
       price: "175,900",
+      type: ["All", "porsche"],
     },
   ];
 
   return (
     <>
-      <article className="border-2 border-blue-500 space-y-[6rem]">
+      <article className="space-y-[6rem]">
         {/* Title */}
         <h1 className="text-[2rem] font-bold text-white text-center">
           Featured Luxuray Cars
         </h1>
         {/* Selectors */}
-        <ul className="flex border-2 justify-between max-w-[20rem] m-auto">
+        <ul className="Selectors flex justify-between max-w-[22rem] m-auto">
           {arrOfLabels.map((e, i) => {
             return (
-              <li key={i} className=" rounded-2xl border-2 border-white p-2">
+              <li key={i} className=" ">
                 <input
                   type="radio"
                   id={e.img}
@@ -94,15 +102,11 @@ export default function Featured() {
                 />
                 <label
                   htmlFor={e.img}
-                  onClick={() => {
-                    // setProjectsType(e);
-                  }}
+                  onClick={() => setFilterCar(e.filter)}
+                  className="flex items-center justify-center  rounded-md text-[1.5rem] text-white h-full  bg-gray-800"
                 >
-                  <div
-                    className={`text-white grid place-items-center text-[1.2rem]  bg-center bg-no-repeat bg-[url('${e.img}')] bg-contain w-[2rem] h-[2rem]`}
-                  >
-                    {e.value}
-                  </div>
+                  <img src={e.img} alt="" className="w-[3.5rem]  p-3" />
+                  <p className="absolute">{e.value}</p>
                 </label>
               </li>
             );
@@ -110,32 +114,36 @@ export default function Featured() {
         </ul>
         {/* Gallery */}
         <ul className="grid grid-cols-3 gap-y-[4rem] place-items-center">
-          {arrOfCars.map((e, i) => {
-            return (
-              <Card
-                key={i}
-                component="li"
-                className="!bg-containerColor w-[20rem] !text-white !rounded-xl pt-[1rem]"
-              >
-                <CardContent>
-                  <h2 className="text-[1.8rem] font-medium">{e.car_name}</h2>
-                  <h4 className="text-[0.9rem] text-gray-400">{e.model}</h4>
-                </CardContent>
-                <CardMedia
-                  image={e.img}
-                  component="div"
-                  className="!bg-contain  h-[10rem] w-[15rem] m-auto"
-                />
-                {/*  */}
-                <div className="flex justify-between pl-[2rem]">
-                  <p className="text-[1.4rem] font-medium">${e.price}</p>
-                  <button className="p-3 rounded-tl-xl bg-blue-500">
-                    <img src={addToCard_logo} alt="img" />
-                  </button>
-                </div>
-              </Card>
-            );
-          })}
+          {arrOfCars
+            .filter((e) => {
+              return e.type.includes(filterCar);
+            })
+            .map((e, i) => {
+              return (
+                <Card
+                  key={i}
+                  component="li"
+                  className="!bg-containerColor w-[20rem] !text-white !rounded-xl pt-[1rem]"
+                >
+                  <CardContent>
+                    <h2 className="text-[1.8rem] font-medium">{e.car_name}</h2>
+                    <h4 className="text-[0.9rem] text-gray-400">{e.model}</h4>
+                  </CardContent>
+                  <CardMedia
+                    image={e.img}
+                    component="div"
+                    className="!bg-contain  h-[10rem] w-[15rem] m-auto"
+                  />
+                  {/*  */}
+                  <div className="flex justify-between pl-[2rem]">
+                    <p className="text-[1.4rem] font-medium">${e.price}</p>
+                    <button className="p-3 rounded-tl-xl bg-blue-500">
+                      <img src={addToCard_logo} alt="img" />
+                    </button>
+                  </div>
+                </Card>
+              );
+            })}
         </ul>
       </article>
     </>

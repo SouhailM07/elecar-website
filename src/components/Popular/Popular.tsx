@@ -92,9 +92,8 @@ export default function Popular() {
         >
           {arrOfCars.map((e, i) => {
             return (
-              <SwiperSlide>
+              <SwiperSlide key={i}>
                 <Card
-                  key={i}
                   component="li"
                   className="!bg-containerColor Card pl-[2rem] cursor-pointer select-none w-[20rem] !text-white !rounded-xl pt-[1rem]"
                 >
