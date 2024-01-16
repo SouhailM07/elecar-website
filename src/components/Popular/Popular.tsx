@@ -7,6 +7,9 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 // mui
 import { Card, CardContent, CardMedia } from "@mui/material";
+// hooks
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 // assets
 import car_1 from "/popular1.png";
 import car_2 from "/popular2.png";
@@ -18,7 +21,19 @@ import addToCard_logo from "/bxs-shopping-bag-alt.svg";
 import speed_logo from "/dashboard-3-line.svg";
 import km_logo from "/funds-box-line.svg";
 import charging_logo from "/charging-pile-2-line.svg";
+
 export default function Popular() {
+  useEffect(() => {
+    // Initialize ScrollReveal
+    const sr = ScrollReveal({
+      // options
+      origin: "top",
+      distance: "60px",
+      duration: 2500,
+      delay: 400,
+    });
+    sr.reveal("#Popular");
+  });
   interface arrOfCars_type {
     img: string;
     car_name: string;
@@ -59,7 +74,7 @@ export default function Popular() {
   ];
   return (
     <>
-      <article className="space-y-[6rem]">
+      <article id="Popular" className="space-y-[6rem]">
         {/* Title */}
         <h1 className="text-[2rem] font-medium text-white text-center">
           Choose Your Electric Car Of <br /> The Porsche Brand
