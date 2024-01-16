@@ -5,9 +5,9 @@ import car_img from "/offer.png";
 export default function Subscribe() {
   return (
     <>
-      <article className="max-w-full text-white flex justify-evenly items-center bg-[url('/offer-bg.png')] h-[35rem]  bg-cover bg-no-repeat">
-        <section className="w-[28rem] space-y-[2.5rem] ">
-          <h1 className="text-[2rem] font-medium">
+      <article id="Subscribe">
+        <section id="Subscribe__s1">
+          <h1 className="md:text-[2rem] text-[1.8rem] font-medium">
             Do You Want To Receive <br /> Special Offers ?
           </h1>
           <p className="text-[1.2rem] text-textColor">
@@ -18,8 +18,8 @@ export default function Subscribe() {
             Subscribe Now
           </button>
         </section>
-        <section>
-          <img src={car_img} alt="car img" className="h-[18rem]" />
+        <section id="Subscribe__s2">
+          <img src={car_img} alt="car img" />
         </section>
       </article>
     </>
