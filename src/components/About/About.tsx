@@ -1,24 +1,39 @@
 import "./about.css";
 // mui
 import { Card, CardContent, CardActions, Button } from "@mui/material";
+// hooks
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 // assets
 import about_img from "/about.png";
 
 export default function About() {
+  useEffect(() => {
+    // Initialize ScrollReveal
+    const sr = ScrollReveal({
+      // options
+      origin: "top",
+      distance: "60px",
+      duration: 2500,
+      delay: 400,
+    });
+    sr.reveal(".About__img", { origin: "left" });
+    sr.reveal(".About__details", { origin: "right" });
+  }, []);
   return (
     <>
       <Card
         component="article"
         className="!bg-transparent flex justify-between items-center"
       >
-        <div className="w-[47%] flex flex-col items-end justify-end">
+        <div className="w-[47%] flex flex-col items-end justify-end About__img ">
           <img src={about_img} alt="" className=" rounded-xl" />
           <div className="about__card_details translate-y-[2.5rem] absolute rounded-3xl w-[15rem] py-[0.8rem] px-[2rem] text-white text-center">
             <h3 className="text-[1.4rem] font-medium ">2.500+</h3>
             <p>Supercharges placed along popular routes</p>
           </div>
         </div>
-        <div className="w-[45%]">
+        <div className="w-[45%] About__details">
           <h2 className="text-white text-[2rem]">
             Machines With <br /> Future Technology
           </h2>
