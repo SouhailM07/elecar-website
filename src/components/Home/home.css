@@ -4,10 +4,39 @@
 @layer components {
 }
 
-.home_detail img {
-  overflow: visible;
+#Home {
+  @apply flex flex-col  items-center;
+  @apply !shadow-none;
+  @apply !bg-transparent !text-white;
+}
+#Home__title {
+  @apply text-center space-y-[0.6rem];
 }
 
+#Home__title h1 {
+  @apply font-medium;
+  @apply text-[2.2rem] mb-[1.4rem];
+}
+#Home__title h3 {
+  @apply text-[1.4rem];
+}
+
+#Home__title h4 {
+  @apply flex space-x-2 justify-center;
+  @apply text-[1.2rem];
+}
+.Home__car {
+  @apply md:h-[18rem] h-[14rem] w-full  my-[2rem];
+  @apply !bg-contain;
+}
+.Home__car-data ul {
+  @apply grid grid-cols-3 place-items-center;
+  @apply md:w-[37rem] w-[28rem];
+}
+.Home__car-data ul li {
+  @apply flex flex-col items-center justify-between;
+  @apply space-y-[0.6rem];
+}
 #Home__button::before {
   content: "";
   @apply h-[6rem] w-[6rem] border-2 border-green-500 absolute flex items-center justify-center rounded-full;

@@ -13,6 +13,10 @@
         containerColor: "hsl(219, 4%, 7%)",
       },
     },
+    screens: {
+      md: "768px",
+      lg: "1024px",
+    },
   },
   plugins: [],
 };

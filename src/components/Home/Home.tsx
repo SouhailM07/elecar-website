@@ -53,33 +53,21 @@ export default function Home() {
   ];
   return (
     <>
-      <Card
-        component="article"
-        className="flex flex-col  items-center !bg-transparent !shadow-none !text-white"
-      >
-        <div id="Home__title" className="text-center space-y-[0.6rem]">
-          <h1 className="text-[2.2rem] mb-[1.4rem] font-medium">
-            Choose The Best Car
-          </h1>
-          <h3 className="text-[1.4rem] Home__subtitle">Porsche Mission E</h3>
-          <h4 className="flex space-x-2 justify-center text-[1.2rem] Home__elec">
+      <Card id="Home" component="article">
+        <div id="Home__title">
+          <h1>Choose The Best Car</h1>
+          <h3 className=" Home__subtitle">Porsche Mission E</h3>
+          <h4 className="Home__elec">
             <img src={bolt_logo} alt="logo" />
             <p className="">Electric Car</p>
           </h4>
         </div>
-        <CardMedia
-          image={home_img}
-          component="div"
-          className="h-[18rem] w-[50rem] !bg-contain my-[2rem] Home__car"
-        />
+        <CardMedia image={home_img} component="div" className=" Home__car" />
         <CardContent className="Home__car-data">
-          <ul className="grid grid-cols-3 place-items-center w-[37rem]">
+          <ul>
             {arrOfDetails.map((e, i) => {
               return (
-                <li
-                  key={i}
-                  className="flex flex-col items-center justify-between space-y-[0.6rem]"
-                >
+                <li key={i}>
                   <Avatar
                     src={e.img}
                     className="p-[1rem] !bg-containerColor home_detail !text-[0.8rem]"
