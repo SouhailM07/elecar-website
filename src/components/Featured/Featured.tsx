@@ -90,7 +90,7 @@ export default function Featured() {
           Featured Luxuray Cars
         </h1>
         {/* Selectors */}
-        <ul className="Selectors flex justify-between max-w-[22rem] m-auto">
+        <ul className="Selectors flex justify-between max-w-[22rem] m-auto ">
           {arrOfLabels.map((e, i) => {
             return (
               <li key={i} className=" ">
@@ -103,9 +103,9 @@ export default function Featured() {
                 <label
                   htmlFor={e.img}
                   onClick={() => setFilterCar(e.filter)}
-                  className="flex items-center justify-center  rounded-md text-[1.5rem] text-white h-full  bg-gray-800"
+                  className="flex items-center justify-center rounded-md text-[1.5rem] text-white h-full  bg-gray-800"
                 >
-                  <img src={e.img} alt="" className="w-[3.5rem]  p-3" />
+                  <img src={e.img} alt="" className="w-[3.5rem] p-3" />
                   <p className="absolute">{e.value}</p>
                 </label>
               </li>
@@ -113,7 +113,7 @@ export default function Featured() {
           })}
         </ul>
         {/* Gallery */}
-        <ul className="grid grid-cols-3 gap-y-[4rem] place-items-center">
+        <ul className="grid gap-y-[4rem] place-items-center" id="Gallery">
           {arrOfCars
             .filter((e) => {
               return e.type.includes(filterCar);

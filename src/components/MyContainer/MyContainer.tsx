@@ -20,8 +20,8 @@ export default function MyContainer() {
       <main className="space-y-[17rem]">
         {/* <Home /> */}
         {/* <About /> */}
-        <Popular />
-        {/* <Featured /> */}
+        {/* <Popular /> */}
+        <Featured />
         {/* <MoreFeatures /> */}
         {/* <Subscribe /> */}
         {/* <Logos /> */}
