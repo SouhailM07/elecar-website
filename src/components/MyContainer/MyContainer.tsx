@@ -18,13 +18,13 @@ export default function MyContainer() {
     <>
       <Navbar />
       <main className="space-y-[17rem]">
-        {/* <Home /> */}
-        {/* <About /> */}
-        {/* <Popular /> */}
-        {/* <Featured /> */}
-        {/* <MoreFeatures /> */}
-        {/* <Subscribe /> */}
-        {/* <Logos /> */}
+        <Home />
+        <About />
+        <Popular />
+        <Featured />
+        <MoreFeatures />
+        <Subscribe />
+        <Logos />
       </main>
       <Footer />
     </>
