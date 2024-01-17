@@ -24,6 +24,6 @@
   @apply text-textColor;
 }
 .about__card_details {
-  background-color: hsla(0, 0%, 100%, 0.1);
+  background-color: #ffffff1a;
   backdrop-filter: blur(5px);
 }

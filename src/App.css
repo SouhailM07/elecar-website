@@ -8,10 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 
-* {
-  /* transition: 0.3s; */
-}
-
 article {
   @apply max-w-[80rem] m-auto;
 }

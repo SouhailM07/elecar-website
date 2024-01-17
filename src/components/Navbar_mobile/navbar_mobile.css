@@ -3,3 +3,8 @@
 @tailwind utilities;
 @layer components {
 }
+/* .bgDiv {
+  background-color: #ffffff1a !important;
+  /* backdrop-filter: blur(5px) !important; 
+} 
+  */
