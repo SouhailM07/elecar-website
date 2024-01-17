@@ -26,8 +26,12 @@ export default function Logos() {
         <ul className="grid max-w-[84rem] m-auto gap-y-[3rem] place-items-center">
           {arrOfLogos.map((e, i) => {
             return (
-              <li key={i} className="opacity-40 hover:opacity-100">
-                <img src={e} alt="logo" className=" w-[4rem]" />
+              <li key={i} className="">
+                <img
+                  src={e}
+                  alt="logo"
+                  className=" w-[4rem] opacity-50 hover:opacity-100"
+                />
               </li>
             );
           })}
