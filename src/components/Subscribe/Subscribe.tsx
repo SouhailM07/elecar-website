@@ -1,8 +1,25 @@
 import "./subscribe.css";
+// hooks
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 // assets
-
 import car_img from "/offer.png";
 export default function Subscribe() {
+  useEffect(() => {
+    // const sr= ScrollReveal({
+
+    // })
+    const sr = ScrollReveal({
+      // options
+      origin: "top",
+      distance: "60px",
+      duration: 2500,
+      delay: 400,
+    });
+    // sr.reveal("#Subscribe");
+    sr.reveal("#Subscribe #Subscribe__s1", { delay: 200, origin: "left" });
+    sr.reveal("#Subscribe #Subscribe__s2", { delay: 200, origin: "right" });
+  }, []);
   return (
     <>
       <article id="Subscribe">

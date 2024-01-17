@@ -8,6 +8,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  @apply overflow-x-hidden;
+}
+
 article {
   @apply max-w-[80rem] m-auto;
 }
