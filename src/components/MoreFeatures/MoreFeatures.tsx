@@ -1,12 +1,25 @@
 import "./morefeatures.css";
+// hooks
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 // assets
 import map_img from "/map.svg";
 import car_img from "/features.png";
 export default function MoreFeatures() {
+  useEffect(() => {
+    const sr = ScrollReveal({
+      origin: "top",
+      duration: 2500,
+      distance: "60px",
+      delay: 400,
+    });
+    sr.reveal("#carImg", { origin: "bottom" });
+    sr.reveal("#MoreFeatures__car");
+  }, []);
   return (
     <>
       <article id="MoreFeatures">
-        <img src={map_img} alt="img" className="rotate-[-25deg] " />
+        <img id="carImg" src={map_img} alt="img" className="rotate-[-25deg] " />
         <img src={car_img} alt="img" id="MoreFeatures__car" />
         <div className="absolute w-[65%] z-[3] ">
           <ul id="MoreFeatures__details">

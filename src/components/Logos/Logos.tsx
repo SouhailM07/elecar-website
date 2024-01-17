@@ -22,7 +22,7 @@ export default function Logos() {
   let arrOfLogos: string[] = [logo_1, logo_2, logo_3, logo_4, logo_5, logo_6];
   return (
     <>
-      <article className="" id="Logos">
+      <article id="Logos">
         <ul className="grid max-w-[84rem] m-auto gap-y-[3rem] place-items-center">
           {arrOfLogos.map((e, i) => {
             return (
