@@ -16,7 +16,7 @@ export default function Footer() {
   let f4: string[] = [facebook_logo, instagram_logo, twitter_logo];
   return (
     <>
-      <footer className="mt-[15rem] pb-[7rem] text-white flex justify-between max-w-[84rem] px-[2rem] m-auto flex-wrap gap-[1rem]">
+      <footer className="mt-[15rem] pb-[7rem] text-white flex md:flex-row flex-col gap-y-[2rem] justify-between max-w-[84rem] px-[2rem] m-auto flex-wrap gap-[1rem]">
         {/* f1 */}
         <div className="w-[18rem] ">
           <div className="space-x-2 flex items-center  footer__title ">

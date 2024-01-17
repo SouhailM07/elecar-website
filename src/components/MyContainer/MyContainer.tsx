@@ -26,7 +26,7 @@ export default function MyContainer() {
         {/* <Subscribe /> */}
         {/* <Logos /> */}
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

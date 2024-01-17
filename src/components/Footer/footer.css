@@ -11,6 +11,9 @@
   @apply space-y-[0.7rem] text-gray-300 text-[1.1rem];
 }
 
+.footer__links li {
+  @apply hover:text-white hover:font-medium;
+}
 footer {
   grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
 }
