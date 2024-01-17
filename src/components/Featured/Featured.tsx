@@ -3,6 +3,7 @@ import "./featured.css";
 import { Card, CardMedia, CardContent } from "@mui/material";
 // hooks
 import { useState, useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 // assets
 import addToCard_logo from "/bxs-shopping-bag-alt.svg";
 //
@@ -22,6 +23,17 @@ export default function Featured() {
       "input[type='radio']"
     ) as HTMLLabelElement;
     firstLabel.click();
+    //
+    const sr = ScrollReveal({
+      // options
+      origin: "top",
+      distance: "60px",
+      duration: 2500,
+      // delay: 400,
+    });
+    sr.reveal("#Features h1");
+    sr.reveal("#Features .Selectors", { delay: 800 });
+    sr.reveal("#Features #Gallery", { delay: 1200, origin: "bottom" });
   }, []);
   let [filterCar, setFilterCar] = useState<string>("All");
   interface arrOfLabels_type {
@@ -84,7 +96,7 @@ export default function Featured() {
 
   return (
     <>
-      <article className="space-y-[6rem]">
+      <article id="Features" className="space-y-[6rem]">
         {/* Title */}
         <h1 className="text-[2rem] font-bold text-white text-center">
           Featured Luxuray Cars
