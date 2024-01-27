@@ -44,7 +44,10 @@ export default function About() {
             </p>
           </CardContent>
           <CardActions className="!pl-0">
-            <Button className="!bg-blue-500 !text-white !px-[1.8rem] !py-[0.8rem] rounded-md !normal-case">
+            <Button
+              role="button"
+              className="!bg-blue-500 !text-white !px-[1.8rem] !py-[0.8rem] rounded-md !normal-case"
+            >
               Know more
             </Button>
           </CardActions>

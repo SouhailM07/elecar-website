@@ -107,7 +107,7 @@ export default function Popular() {
             return (
               <SwiperSlide key={i}>
                 <Card
-                  component="li"
+                  // component="li"
                   className="!bg-containerColor Card pl-[2rem] cursor-pointer select-none w-[20rem] !text-white !rounded-xl pt-[1rem]"
                 >
                   <div className="py-[1rem]">

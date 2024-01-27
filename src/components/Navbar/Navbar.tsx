@@ -30,13 +30,14 @@ export default function Navbar() {
             </button>
             <Stack
               component="ul"
+              role="list"
               direction="row"
               spacing="2.5rem"
               className="font-medium text-[1.2rem] lg:!flex !hidden"
             >
               {arrOfLinks.map((e, i) => {
                 return (
-                  <li key={i}>
+                  <li key={i} role="listitem">
                     <a href={`#${e}`}>{e}</a>
                   </li>
                 );

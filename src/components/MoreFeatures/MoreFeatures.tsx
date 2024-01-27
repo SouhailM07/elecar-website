@@ -19,24 +19,32 @@ export default function MoreFeatures() {
   return (
     <>
       <article id="MoreFeatures">
-        <img id="carImg" src={map_img} alt="img" className="rotate-[-25deg] " />
-        <img src={car_img} alt="img" id="MoreFeatures__car" />
-        <div className="absolute w-[65%] z-[3] ">
-          <ul id="MoreFeatures__details">
-            <li className="about__card_details px-[2rem] ">
+        <img
+          id="carImg"
+          src={map_img}
+          alt="image"
+          className="rotate-[-25deg] "
+        />
+        <img src={car_img} alt="image" id="MoreFeatures__car" />
+        <section className="absolute w-[65%] z-[3] ">
+          <ul id="MoreFeatures__details" role="list">
+            <li className="about__card_details px-[2rem] " role="listitem">
               <h3>800v</h3>
               <p>Turbo Charge</p>
             </li>
-            <li className="self-end translate-y-[-2rem] about__card_details px-[3rem] ">
+            <li
+              className="self-end translate-y-[-2rem] about__card_details px-[3rem]"
+              role="listitem"
+            >
               <h3>350</h3>
               <p>km Range</p>
             </li>
-            <li className="about__card_details px-[3rem] ">
+            <li className="about__card_details px-[3rem]" role="listitem">
               <h3>480</h3>
               <p>Km Travel</p>
             </li>
           </ul>
-        </div>
+        </section>
       </article>
     </>
   );

@@ -102,10 +102,13 @@ export default function Featured() {
           Featured Luxuray Cars
         </h1>
         {/* Selectors */}
-        <ul className="Selectors flex justify-between max-w-[22rem] m-auto ">
+        <ul
+          role="list"
+          className="Selectors flex justify-between max-w-[22rem] m-auto "
+        >
           {arrOfLabels.map((e, i) => {
             return (
-              <li key={i} className=" ">
+              <li key={i} role="listitem">
                 <input
                   type="radio"
                   id={e.img}
@@ -117,7 +120,7 @@ export default function Featured() {
                   onClick={() => setFilterCar(e.filter)}
                   className="flex items-center justify-center rounded-md text-[1.5rem] text-white h-full  bg-gray-800"
                 >
-                  <img src={e.img} alt="" className="w-[3.5rem] p-3" />
+                  <img src={e.img} alt="Car logo" className="w-[3.5rem] p-3" />
                   <p className="absolute">{e.value}</p>
                 </label>
               </li>
@@ -125,7 +128,11 @@ export default function Featured() {
           })}
         </ul>
         {/* Gallery */}
-        <ul className="grid gap-y-[4rem] place-items-center" id="Gallery">
+        <ul
+          role="list"
+          className="grid gap-y-[4rem] place-items-center"
+          id="Gallery"
+        >
           {arrOfCars
             .filter((e) => {
               return e.type.includes(filterCar);
@@ -134,12 +141,13 @@ export default function Featured() {
               return (
                 <Card
                   key={i}
+                  role="listitem"
                   component="li"
                   className="!bg-containerColor w-[20rem] !text-white !rounded-xl pt-[1rem]"
                 >
                   <CardContent>
                     <h2 className="text-[1.8rem] font-medium">{e.car_name}</h2>
-                    <h4 className="text-[0.9rem] text-gray-400">{e.model}</h4>
+                    <h3 className="text-[0.9rem] text-gray-400">{e.model}</h3>
                   </CardContent>
                   <CardMedia
                     image={e.img}
@@ -150,7 +158,7 @@ export default function Featured() {
                   <div className="flex justify-between pl-[2rem]">
                     <p className="text-[1.4rem] font-medium">${e.price}</p>
                     <button className="p-3 rounded-tl-xl bg-blue-500">
-                      <img src={addToCard_logo} alt="img" />
+                      <img src={addToCard_logo} alt="image" />
                     </button>
                   </div>
                 </Card>
