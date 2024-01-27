@@ -20,7 +20,7 @@ export default function Navbar() {
           className="!bg-bodyColor !shadow-none m-auto max-w-[84rem]"
           position="sticky"
         >
-          <Toolbar className="justify-between items-center">
+          <Toolbar component="nav" className="justify-between items-center">
             <div className="flex items-center text-[1.5rem] space-x-2">
               <img src={nav_logo} alt="logo" />
               <p>Elecar</p>
