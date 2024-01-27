@@ -18,14 +18,20 @@ export default function Navbar_mobile() {
       >
         <div className="bg-gray-900 text-[1.3rem] h-full w-[100vw] overflow-hidden">
           <div className="flex justify-end p-[2rem]">
-            <button onClick={() => setOpenPanel(false)}>
-              <img src={close_logo} alt="" className="h-[3rem] " />
+            <button
+              aria-label="close menubar"
+              onClick={() => setOpenPanel(false)}
+            >
+              <img src={close_logo} alt="close logo" className="h-[3rem] " />
             </button>
           </div>
-          <ul className="flex flex-col  justify-evenly text-white  h-[60%] font-bold text-center ">
+          <ul
+            role="list"
+            className="flex flex-col  justify-evenly text-white  h-[60%] font-bold text-center "
+          >
             {arrOfLinks.map((e, i) => {
               return (
-                <li key={i} onClick={() => setOpenPanel(false)}>
+                <li key={i} onClick={() => setOpenPanel(false)} role="listitem">
                   <a href={"#" + e}>{e}</a>
                 </li>
               );

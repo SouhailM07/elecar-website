@@ -55,6 +55,7 @@ export default function Featured() {
     model: string;
     price: string;
     type: string[];
+    ariaSpeech: string;
   }
   const arrOfCars: arrOfCars_type[] = [
     {
@@ -63,6 +64,7 @@ export default function Featured() {
       model: "Model X",
       price: "98,900",
       type: ["All", "tesla"],
+      ariaSpeech: "white tesla model x",
     },
     {
       img: tesla_car_red,
@@ -70,6 +72,7 @@ export default function Featured() {
       model: "Model 3",
       price: "45,900",
       type: ["All", "tesla"],
+      ariaSpeech: "red tesla model 3",
     },
     {
       img: audi_car,
@@ -77,6 +80,7 @@ export default function Featured() {
       model: "E-tron",
       price: "175,900",
       type: ["All", "audi"],
+      ariaSpeech: "audi model e tron",
     },
     {
       img: porsche_1,
@@ -84,6 +88,7 @@ export default function Featured() {
       model: "E-tron",
       price: "175,900",
       type: ["All", "porsche"],
+      ariaSpeech: "porsche ",
     },
     {
       img: porsche_2,
@@ -91,6 +96,7 @@ export default function Featured() {
       model: "E-tron",
       price: "175,900",
       type: ["All", "porsche"],
+      ariaSpeech: "porsche ",
     },
   ];
 
@@ -120,7 +126,7 @@ export default function Featured() {
                   onClick={() => setFilterCar(e.filter)}
                   className="flex items-center justify-center rounded-md text-[1.5rem] text-white h-full  bg-gray-800"
                 >
-                  <img src={e.img} alt="Car logo" className="w-[3.5rem] p-3" />
+                  <img src={e.img} alt="" className="w-[3.5rem] p-3" />
                   <p className="absolute">{e.value}</p>
                 </label>
               </li>
@@ -157,7 +163,10 @@ export default function Featured() {
                   {/*  */}
                   <div className="flex justify-between pl-[2rem]">
                     <p className="text-[1.4rem] font-medium">${e.price}</p>
-                    <button className="p-3 rounded-tl-xl bg-blue-500">
+                    <button
+                      aria-label={e.ariaSpeech}
+                      className="p-3 rounded-tl-xl bg-blue-500"
+                    >
                       <img src={addToCard_logo} alt="image" />
                     </button>
                   </div>

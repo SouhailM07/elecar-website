@@ -19,13 +19,18 @@ export default function Navbar() {
         <AppBar
           className="!bg-bodyColor !shadow-none m-auto max-w-[84rem]"
           position="sticky"
+          role="navigation"
         >
           <Toolbar component="nav" className="justify-between items-center">
             <div className="flex items-center text-[1.5rem] space-x-2">
               <img src={nav_logo} alt="logo" />
               <p>Elecar</p>
             </div>
-            <button className="lg:hidden " onClick={() => setOpenPanel(true)}>
+            <button
+              className="lg:hidden"
+              aria-label="open menubar"
+              onClick={() => setOpenPanel(true)}
+            >
               <img src={menu_logo} alt="logo" className="h-[1.5rem]" />
             </button>
             <Stack

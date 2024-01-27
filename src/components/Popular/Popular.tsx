@@ -103,39 +103,47 @@ export default function Popular() {
           modules={[Pagination]}
           className="mySwiper"
         >
-          {arrOfCars.map((e, i) => {
-            return (
-              <SwiperSlide key={i}>
-                <Card
-                  // component="li"
-                  className="!bg-containerColor Card pl-[2rem] cursor-pointer select-none w-[20rem] !text-white !rounded-xl pt-[1rem]"
-                >
-                  <div className="py-[1rem]">
-                    <h2 className="text-[1.8rem] font-medium">{e.car_name}</h2>
-                    <h4 className="text-[0.9rem] text-gray-400">{e.model}</h4>
-                  </div>
-                  <CardMedia
-                    image={e.img}
-                    component="div"
-                    className="!bg-contain  h-[10rem] w-[14rem] m-auto CardMedia"
-                  />
-                  {/*  */}
-                  <CardContent className="grid grid-cols-2 gap-y-4 !px-[0rem]">
-                    <Detail img={speed_logo} value="3,7 Sec" />
-                    <Detail img={km_logo} value="356 km/h" />
-                    <Detail img={charging_logo} value="Electric" />
-                  </CardContent>
-                  {/*  */}
-                  <div className="flex justify-between ">
-                    <p className="text-[1.4rem] font-medium">${e.price}</p>
-                    <button className="p-3 rounded-tl-xl bg-blue-500">
-                      <img src={addToCard_logo} alt="img" />
-                    </button>
-                  </div>
-                </Card>
-              </SwiperSlide>
-            );
-          })}
+          <ul role="list">
+            {arrOfCars.map((e, i) => {
+              return (
+                <li role="listitem" key={i}>
+                  <SwiperSlide>
+                    <Card
+                      // component="li"
+                      className="!bg-containerColor Card pl-[2rem] cursor-pointer select-none w-[20rem] !text-white !rounded-xl pt-[1rem]"
+                    >
+                      <div className="py-[1rem]">
+                        <h2 className="text-[1.8rem] font-medium">
+                          {e.car_name}
+                        </h2>
+                        <h4 className="text-[0.9rem] text-gray-400">
+                          {e.model}
+                        </h4>
+                      </div>
+                      <CardMedia
+                        image={e.img}
+                        component="div"
+                        className="!bg-contain  h-[10rem] w-[14rem] m-auto CardMedia"
+                      />
+                      {/*  */}
+                      <CardContent className="grid grid-cols-2 gap-y-4 !px-[0rem]">
+                        <Detail img={speed_logo} value="3,7 Sec" />
+                        <Detail img={km_logo} value="356 km/h" />
+                        <Detail img={charging_logo} value="Electric" />
+                      </CardContent>
+                      {/*  */}
+                      <div className="flex justify-between ">
+                        <p className="text-[1.4rem] font-medium">${e.price}</p>
+                        <button className="p-3 rounded-tl-xl bg-blue-500">
+                          <img src={addToCard_logo} alt="img" />
+                        </button>
+                      </div>
+                    </Card>
+                  </SwiperSlide>
+                </li>
+              );
+            })}
+          </ul>
         </Swiper>
       </article>
     </>
