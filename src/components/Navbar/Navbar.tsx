@@ -29,6 +29,8 @@ export default function Navbar() {
             <button
               className="lg:hidden"
               aria-label="open menubar"
+              aria-expanded={openPanel}
+              id="toggleBtn"
               onClick={() => setOpenPanel(true)}
             >
               <img src={menu_logo} alt="logo" className="h-[1.5rem]" />

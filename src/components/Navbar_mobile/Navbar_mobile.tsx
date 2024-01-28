@@ -14,6 +14,8 @@ export default function Navbar_mobile() {
       <Drawer
         anchor="right"
         open={openPanel}
+        aria-labelledby="toggleBtn"
+        role="region"
         // onClose={() => setOpenPanel(false)}
       >
         <div className="bg-gray-900 text-[1.3rem] h-full w-[100vw] overflow-hidden">
