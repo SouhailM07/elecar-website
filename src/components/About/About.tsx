@@ -5,7 +5,7 @@ import { Card, CardContent, CardActions, Button } from "@mui/material";
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 // assets
-import about_img from "/about.png";
+import about_img from "/about.webp";
 
 export default function About() {
   useEffect(() => {
