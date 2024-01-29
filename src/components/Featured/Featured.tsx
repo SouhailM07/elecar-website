@@ -7,15 +7,15 @@ import ScrollReveal from "scrollreveal";
 // assets
 import addToCard_logo from "/bxs-shopping-bag-alt.svg";
 //
-import porsche_logo from "/logo1.png";
-import audi_logo from "/logo2.png";
-import tesla_logo from "/logo3.png";
+import porsche_logo from "/logo1.webp";
+import audi_logo from "/logo2.webp";
+import tesla_logo from "/logo3.webp";
 //
-import tesla_car_white from "/featured1.png";
-import tesla_car_red from "/featured2.png";
-import audi_car from "/featured3.png";
-import porsche_1 from "/featured4.png";
-import porsche_2 from "/featured5.png";
+import tesla_car_white from "/featured1.webp";
+import tesla_car_red from "/featured2.webp";
+import audi_car from "/featured3.webp";
+import porsche_1 from "/featured4.webp";
+import porsche_2 from "/featured5.webp";
 
 export default function Featured() {
   useEffect(() => {
