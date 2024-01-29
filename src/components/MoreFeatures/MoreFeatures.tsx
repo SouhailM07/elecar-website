@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 // assets
 import map_img from "/map.svg";
-import car_img from "/features.png";
+import car_img from "/features.webp";
 export default function MoreFeatures() {
   useEffect(() => {
     const sr = ScrollReveal({

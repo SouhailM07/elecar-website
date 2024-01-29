@@ -8,7 +8,7 @@ import React, { useState } from "react";
 //@ts-ignore
 export const PanelContext = React.createContext();
 // assets
-import nav_logo from "/favicon.png";
+import nav_logo from "/favicon.webp";
 import menu_logo from "/bars-solid.svg";
 export default function Navbar() {
   let arrOfLinks: string[] = ["Home", "About", "Popular", "Features"];

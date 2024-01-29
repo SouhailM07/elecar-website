@@ -3,12 +3,12 @@ import "./logos.css";
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 // assets
-import logo_1 from "/logo1.png";
-import logo_2 from "/logo2.png";
-import logo_3 from "/logo3.png";
-import logo_4 from "/logo4.png";
-import logo_5 from "/logo5.png";
-import logo_6 from "/logo6.png";
+import logo_1 from "/logo1.webp";
+import logo_2 from "/logo2.webp";
+import logo_3 from "/logo3.webp";
+import logo_4 from "/logo4.webp";
+import logo_5 from "/logo5.webp";
+import logo_6 from "/logo6.webp";
 export default function Logos() {
   useEffect(() => {
     const sr = ScrollReveal({

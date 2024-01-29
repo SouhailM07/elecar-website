@@ -3,7 +3,7 @@ import "./subscribe.css";
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 // assets
-import car_img from "/offer.png";
+import car_img from "/offer.webp";
 export default function Subscribe() {
   useEffect(() => {
     // const sr= ScrollReveal({

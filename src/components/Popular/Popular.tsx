@@ -11,11 +11,11 @@ import { Card, CardContent, CardMedia } from "@mui/material";
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 // assets
-import car_1 from "/popular1.png";
-import car_2 from "/popular2.png";
-import car_3 from "/popular3.png";
-import car_4 from "/popular4.png";
-import car_5 from "/popular5.png";
+import car_1 from "/popular1.webp";
+import car_2 from "/popular2.webp";
+import car_3 from "/popular3.webp";
+import car_4 from "/popular4.webp";
+import car_5 from "/popular5.webp";
 //
 import addToCard_logo from "/bxs-shopping-bag-alt.svg";
 import speed_logo from "/dashboard-3-line.svg";

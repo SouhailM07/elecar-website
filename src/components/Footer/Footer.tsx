@@ -1,6 +1,6 @@
 import "./footer.css";
 // assets
-import img from "/favicon.png";
+import img from "/favicon.webp";
 import facebook_logo from "/facebook-f.svg";
 import instagram_logo from "/instagram.svg";
 import twitter_logo from "/x-twitter.svg";

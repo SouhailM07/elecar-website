@@ -11,7 +11,7 @@ import {
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 // assets
-import home_img from "/home.png";
+import home_img from "/home.webp";
 import bolt_logo from "/bolt-solid -small.svg";
 import bolt_big from "/bolt-solid.svg";
 import temp_logo from "/temperature-quarter-solid.svg";
