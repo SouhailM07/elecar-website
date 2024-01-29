@@ -5,7 +5,7 @@
 #Subscribe {
   @apply flex lg:flex-row overflow-hidden flex-col lg:space-y-0 space-y-[4rem] lg:justify-evenly items-center px-[2rem];
   @apply max-w-full min-h-[35rem];
-  @apply text-white bg-[url('/offer-bg.png')] bg-cover bg-no-repeat;
+  @apply text-white bg-[url('/offer-bg.webp')] bg-cover bg-no-repeat;
 }
 #Subscribe__s1 {
   @apply max-w-[28rem] space-y-[2.5rem] text-center lg:text-left;
